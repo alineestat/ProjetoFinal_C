@@ -1,0 +1,67 @@
+\hypertarget{class_jewel_collector_1_1_jewel_collector}{}\doxysection{Jewel\+Collector.\+Jewel\+Collector Class Reference}
+\label{class_jewel_collector_1_1_jewel_collector}\index{JewelCollector.JewelCollector@{JewelCollector.JewelCollector}}
+
+
+A classe \mbox{\hyperlink{class_jewel_collector_1_1_jewel_collector}{Jewel\+Collector}} é responsável por implementar o método \mbox{\hyperlink{class_jewel_collector_1_1_jewel_collector_a173ee2675f4c7c51f21d08791a62b9c0}{Main()}}, criar o mapa, inserir as joias, obstáculos, instanciar o robô e ler os comandos do teclado.   
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jewel_collector_1_1_jewel_collector_a804cfdf4dde48863e175701cb82ec17e}\label{class_jewel_collector_1_1_jewel_collector_a804cfdf4dde48863e175701cb82ec17e}} 
+{\bfseries Jewel\+Collector} ()
+\begin{DoxyCompactList}\small\item\em O construtor define que a propriedade Round se inicia com valor igual a 1.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_jewel_collector_ab2a0412dd080ccdacf99284a5f634a5f}{Build\+Map}} (\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} m, \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} r)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jewel_collector_1_1_jewel_collector_a173ee2675f4c7c51f21d08791a62b9c0}\label{class_jewel_collector_1_1_jewel_collector_a173ee2675f4c7c51f21d08791a62b9c0}} 
+static void {\bfseries Main} ()
+\begin{DoxyCompactList}\small\item\em O método Main é o ponto de início da execução. Os elementos do jogo são criados e um loop é iniciado, aguardando os comandos do jogador a partir do método Console.\+Read\+Key().  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_jewel_collector_1_1_jewel_collector_a59bd27bbdc2e295ad3565d811bc40629}{Round}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A propriedade Round armazena a rodada atual  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{class_jewel_collector_1_1_jewel_collector}{Jewel\+Collector}} é responsável por implementar o método \mbox{\hyperlink{class_jewel_collector_1_1_jewel_collector_a173ee2675f4c7c51f21d08791a62b9c0}{Main()}}, criar o mapa, inserir as joias, obstáculos, instanciar o robô e ler os comandos do teclado.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jewel_collector_1_1_jewel_collector_ab2a0412dd080ccdacf99284a5f634a5f}\label{class_jewel_collector_1_1_jewel_collector_ab2a0412dd080ccdacf99284a5f634a5f}} 
+\index{JewelCollector.JewelCollector@{JewelCollector.JewelCollector}!BuildMap@{BuildMap}}
+\index{BuildMap@{BuildMap}!JewelCollector.JewelCollector@{JewelCollector.JewelCollector}}
+\doxysubsubsection{\texorpdfstring{BuildMap()}{BuildMap()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Jewel\+Collector.\+Build\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}}]{m,  }\item[{\mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}}]{r }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Build\+Map insere os elementos do jogo no mapa. A partir da fase 2, os elementos são inseridos de maneira aleatória, seguindo a proporção aproximada de 80\% de espaço vazio (\mbox{\hyperlink{class_jewel_collector_1_1_open_space}{Open\+Space}}) e 20\% de obstáculos e joias.  
+\begin{DoxyParams}{Parameters}
+{\em m} & Especifica o objeto do tipo \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} no qual serão inseridos os elementos\\
+\hline
+{\em r} & Especifica o robô que irá interagir com o mapa\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_jewel_collector_1_1_jewel_collector_a59bd27bbdc2e295ad3565d811bc40629}\label{class_jewel_collector_1_1_jewel_collector_a59bd27bbdc2e295ad3565d811bc40629}} 
+\index{JewelCollector.JewelCollector@{JewelCollector.JewelCollector}!Round@{Round}}
+\index{Round@{Round}!JewelCollector.JewelCollector@{JewelCollector.JewelCollector}}
+\doxysubsubsection{\texorpdfstring{Round}{Round}}
+{\footnotesize\ttfamily int Jewel\+Collector.\+Jewel\+Collector.\+Round\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A propriedade Round armazena a rodada atual  
+
+Inteiro não negativo
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/cwart/\+Downloads/projeto\+\_\+aline/projeto/Jewl\+Collector.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,250 @@
+\hypertarget{class_jewel_collector_1_1_robot}{}\doxysection{Jewel\+Collector.\+Robot Class Reference}
+\label{class_jewel_collector_1_1_robot}\index{JewelCollector.Robot@{JewelCollector.Robot}}
+
+
+\mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} é o agente controlado pelo usuário que navega pelo mapa do jogo. O objetivo é fazer com que \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} colete todas as joias que estão espalhadas, desviando dos obstáculos. \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} possui coordenadas (x, y) e uma sacola (Bag) que contém as joias coletadas.   
+
+
+Inheritance diagram for Jewel\+Collector.\+Robot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_jewel_collector_1_1_robot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jewel_collector_1_1_robot_a929bd3b582db8016789762b7c7e1b6e9}\label{class_jewel_collector_1_1_robot_a929bd3b582db8016789762b7c7e1b6e9}} 
+{\bfseries Robot} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_ac067a80ace71c2180206bd3cbe7225bc}{Go\+North}} (\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} m)
+\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_ac3ff09b7efa0e9ee52357dea56f5849f}{Go\+South}} (\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} m)
+\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_ad2bb7c0467e6f42efad5b9475d72e010}{Go\+East}} (\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} m)
+\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_ad44351379c2773d6148f1888f266e5af}{Go\+West}} (\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} m)
+\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_ac876fdf476ba317aacbfcfb15f44b437}{Collect\+Jewel}} (\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} m)
+\begin{DoxyCompactList}\small\item\em A função Collect\+Jewel coleta as joias adjacentes a \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_ad0e0dff16ce70b250b2445115c2cc118}{Collect\+Energy}} (\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} m)
+\begin{DoxyCompactList}\small\item\em A função Collect\+Energy utiliza a energia de Trees e Jewel\+Blues nas adjacencias.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_a0a67c1b84119d4fb72305dda20db951e}{Use\+Energy}} (int x, int y, \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} m)
+\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_ae76f059e753420f59e1c80f2140f109b}{Check\+For\+Radioactive}} (\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} m, char movement)
+\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_ad49aaedefa444152a24d6ef6d8e471f1}{Show\+Total\+Jewels}} ()
+\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_a2300706565f1fe67a205baf523a08ba2}{Show\+Total\+Value}} ()
+\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_robot_a69dbec13dcab77198a2d2cd0be1a5f92}{Show\+Energy}} ()
+\item 
+\mbox{\Hypertarget{class_jewel_collector_1_1_robot_acdfcd2129a419a095f3043f2528703fe}\label{class_jewel_collector_1_1_robot_acdfcd2129a419a095f3043f2528703fe}} 
+override string {\bfseries To\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_jewel_collector_1_1_robot_afb2d45419e2a395c020fb1cc86661b3a}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Especifica a coordenada x de \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_jewel_collector_1_1_robot_a29c51942217751d73895fe27d757b91c}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Especifica a coordenada y de \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}  \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}} $>$ \mbox{\hyperlink{class_jewel_collector_1_1_robot_a025638d55f212408ffe708c3fa48c9ce}{Bag}} = new List$<$\mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Armazena as joias coletadas pelo robô  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_jewel_collector_1_1_robot_a310abb7bf81841f9c635a8b4ec5903c1}{Energy}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Armazena a energia do robô  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} é o agente controlado pelo usuário que navega pelo mapa do jogo. O objetivo é fazer com que \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} colete todas as joias que estão espalhadas, desviando dos obstáculos. \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} possui coordenadas (x, y) e uma sacola (Bag) que contém as joias coletadas.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jewel_collector_1_1_robot_ae76f059e753420f59e1c80f2140f109b}\label{class_jewel_collector_1_1_robot_ae76f059e753420f59e1c80f2140f109b}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!CheckForRadioactive@{CheckForRadioactive}}
+\index{CheckForRadioactive@{CheckForRadioactive}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{CheckForRadioactive()}{CheckForRadioactive()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Check\+For\+Radioactive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}}]{m,  }\item[{char}]{movement }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Check\+For\+Radioactive checa se há um elemento radioativo 1) no local onde o robô está pisando, ou 2) nas adjacências ao local em que o robô está pisando.  
+\begin{DoxyParams}{Parameters}
+{\em m} & Especifica o objeto do tipo \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} com o qual o robô está interagindo\\
+\hline
+{\em movement} & Especifica para qual direção o robô está se movendo (\textquotesingle{}e\textquotesingle{} para east, \textquotesingle{}n\textquotesingle{} para north, \textquotesingle{}w\textquotesingle{} para west e \textquotesingle{}s\textquotesingle{} para south).\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_jewel_collector_1_1_robot_ad0e0dff16ce70b250b2445115c2cc118}\label{class_jewel_collector_1_1_robot_ad0e0dff16ce70b250b2445115c2cc118}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!CollectEnergy@{CollectEnergy}}
+\index{CollectEnergy@{CollectEnergy}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{CollectEnergy()}{CollectEnergy()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Collect\+Energy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}}]{m }\end{DoxyParamCaption})}
+
+
+
+A função Collect\+Energy utiliza a energia de Trees e Jewel\+Blues nas adjacencias.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Mapa com o qual o robô está interagindo\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_jewel_collector_1_1_robot_ac876fdf476ba317aacbfcfb15f44b437}\label{class_jewel_collector_1_1_robot_ac876fdf476ba317aacbfcfb15f44b437}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!CollectJewel@{CollectJewel}}
+\index{CollectJewel@{CollectJewel}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{CollectJewel()}{CollectJewel()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Collect\+Jewel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}}]{m }\end{DoxyParamCaption})}
+
+
+
+A função Collect\+Jewel coleta as joias adjacentes a \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Mapa com o qual o robô está interagindo\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_jewel_collector_1_1_robot_ad2bb7c0467e6f42efad5b9475d72e010}\label{class_jewel_collector_1_1_robot_ad2bb7c0467e6f42efad5b9475d72e010}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!GoEast@{GoEast}}
+\index{GoEast@{GoEast}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{GoEast()}{GoEast()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Go\+East (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}}]{m }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Go\+East move \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} para a direita na matrix de \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}. Essa operação só ocorre se houver um espaço vazio ou elemento radioativo à direita de \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}.  \mbox{\Hypertarget{class_jewel_collector_1_1_robot_ac067a80ace71c2180206bd3cbe7225bc}\label{class_jewel_collector_1_1_robot_ac067a80ace71c2180206bd3cbe7225bc}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!GoNorth@{GoNorth}}
+\index{GoNorth@{GoNorth}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{GoNorth()}{GoNorth()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Go\+North (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}}]{m }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Go\+North move \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} para cima na matrix de \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}. Essa operação só ocorre se houver um espaço vazio ou um elemento radioativo acima de \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}.  \mbox{\Hypertarget{class_jewel_collector_1_1_robot_ac3ff09b7efa0e9ee52357dea56f5849f}\label{class_jewel_collector_1_1_robot_ac3ff09b7efa0e9ee52357dea56f5849f}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!GoSouth@{GoSouth}}
+\index{GoSouth@{GoSouth}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{GoSouth()}{GoSouth()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Go\+South (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}}]{m }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Go\+South move \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} para baixo na matrix de \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}. Essa operação só ocorre se houver um espaço vazio ou um elemento radioativo abaixo de \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}.  \mbox{\Hypertarget{class_jewel_collector_1_1_robot_ad44351379c2773d6148f1888f266e5af}\label{class_jewel_collector_1_1_robot_ad44351379c2773d6148f1888f266e5af}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!GoWest@{GoWest}}
+\index{GoWest@{GoWest}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{GoWest()}{GoWest()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Go\+West (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}}]{m }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Go\+West move \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} para a esquerda na matrix de \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}. Essa operação só ocorre se houver um espaço vazio ou elemento radioativo à esquerda de \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}.  \mbox{\Hypertarget{class_jewel_collector_1_1_robot_a69dbec13dcab77198a2d2cd0be1a5f92}\label{class_jewel_collector_1_1_robot_a69dbec13dcab77198a2d2cd0be1a5f92}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!ShowEnergy@{ShowEnergy}}
+\index{ShowEnergy@{ShowEnergy}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{ShowEnergy()}{ShowEnergy()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Show\+Energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Show\+Total\+Value imprime no console o valor total das joias que foram coletadas pelo robô.  \mbox{\Hypertarget{class_jewel_collector_1_1_robot_ad49aaedefa444152a24d6ef6d8e471f1}\label{class_jewel_collector_1_1_robot_ad49aaedefa444152a24d6ef6d8e471f1}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!ShowTotalJewels@{ShowTotalJewels}}
+\index{ShowTotalJewels@{ShowTotalJewels}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{ShowTotalJewels()}{ShowTotalJewels()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Show\+Total\+Jewels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Show\+Total\+Jewels imprime no console o total de joias coletadas pelo robô.  \mbox{\Hypertarget{class_jewel_collector_1_1_robot_a2300706565f1fe67a205baf523a08ba2}\label{class_jewel_collector_1_1_robot_a2300706565f1fe67a205baf523a08ba2}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!ShowTotalValue@{ShowTotalValue}}
+\index{ShowTotalValue@{ShowTotalValue}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{ShowTotalValue()}{ShowTotalValue()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Show\+Total\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Show\+Total\+Value imprime no console o valor total das joias que foram coletadas pelo robô.  \mbox{\Hypertarget{class_jewel_collector_1_1_robot_a0a67c1b84119d4fb72305dda20db951e}\label{class_jewel_collector_1_1_robot_a0a67c1b84119d4fb72305dda20db951e}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!UseEnergy@{UseEnergy}}
+\index{UseEnergy@{UseEnergy}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{UseEnergy()}{UseEnergy()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Robot.\+Use\+Energy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}}]{m }\end{DoxyParamCaption})}
+
+
+
+
+
+A função Use\+Energy coleta a energia de um objeto do tipo \mbox{\hyperlink{class_jewel_collector_1_1_jewel_blue}{Jewel\+Blue}} ou do tipo \mbox{\hyperlink{class_jewel_collector_1_1_tree}{Tree}}, na coordenada especificada na entrada.  
+\begin{DoxyParams}{Parameters}
+{\em x} & Especifica a coordenada x da matrix de \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}\\
+\hline
+{\em y} & Especifica a coordenada y da matrix de \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}\\
+\hline
+{\em m} & Especifica o objeto do tipo \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} com que o robô está interagindo\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_jewel_collector_1_1_robot_a025638d55f212408ffe708c3fa48c9ce}\label{class_jewel_collector_1_1_robot_a025638d55f212408ffe708c3fa48c9ce}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!Bag@{Bag}}
+\index{Bag@{Bag}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{Bag}{Bag}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}$>$ Jewel\+Collector.\+Robot.\+Bag = new List$<$\mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}$>$()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Armazena as joias coletadas pelo robô  
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}} & A lista é do tipo \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}\\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{class_jewel_collector_1_1_robot_a310abb7bf81841f9c635a8b4ec5903c1}\label{class_jewel_collector_1_1_robot_a310abb7bf81841f9c635a8b4ec5903c1}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!Energy@{Energy}}
+\index{Energy@{Energy}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{Energy}{Energy}}
+{\footnotesize\ttfamily int Jewel\+Collector.\+Robot.\+Energy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Armazena a energia do robô  
+
+\mbox{\Hypertarget{class_jewel_collector_1_1_robot_afb2d45419e2a395c020fb1cc86661b3a}\label{class_jewel_collector_1_1_robot_afb2d45419e2a395c020fb1cc86661b3a}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!X@{X}}
+\index{X@{X}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily int Jewel\+Collector.\+Robot.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Especifica a coordenada x de \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}  
+
+Não pode ser negativo\mbox{\Hypertarget{class_jewel_collector_1_1_robot_a29c51942217751d73895fe27d757b91c}\label{class_jewel_collector_1_1_robot_a29c51942217751d73895fe27d757b91c}} 
+\index{JewelCollector.Robot@{JewelCollector.Robot}!Y@{Y}}
+\index{Y@{Y}!JewelCollector.Robot@{JewelCollector.Robot}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily int Jewel\+Collector.\+Robot.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Especifica a coordenada y de \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}  
+
+Não pode ser negativo
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/cwart/\+Downloads/projeto\+\_\+aline/projeto/Robot.\+cs\end{DoxyCompactItemize}
