@@ -1,0 +1,94 @@
+\hypertarget{class_jewel_collector_1_1_map}{}\doxysection{Jewel\+Collector.\+Map Class Reference}
+\label{class_jewel_collector_1_1_map}\index{JewelCollector.Map@{JewelCollector.Map}}
+
+
+A classe \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} implementa o espaço virtual através do qual o robô se locomove. Ela armazena todas as informações dos elementos do mapa.   
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jewel_collector_1_1_map_abbe1565ef57959a03be32772724ed166}\label{class_jewel_collector_1_1_map_abbe1565ef57959a03be32772724ed166}} 
+{\bfseries Map} ()
+\begin{DoxyCompactList}\small\item\em O construtor de \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} atribui espaços vazios (\mbox{\hyperlink{class_jewel_collector_1_1_open_space}{Open\+Space}}) a todos os índices de sua matriz quando \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} é inicializado.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_jewel_collector_1_1_map_a6d008f721bd5867301a7b4364a8d914e}\label{class_jewel_collector_1_1_map_a6d008f721bd5867301a7b4364a8d914e}} 
+void {\bfseries draw} ()
+\begin{DoxyCompactList}\small\item\em A função \mbox{\hyperlink{class_jewel_collector_1_1_map_a6d008f721bd5867301a7b4364a8d914e}{draw()}} imprime a matrix de \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} no console.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_map_a49a79ae159f7070243505d0829a9561d}{insert\+Entity}} (int i, int j, \mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}} e)
+\begin{DoxyCompactList}\small\item\em A função insert\+Entity insere um elemento do jogo (obstáculo ou jóia) na coordenada especificada  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jewel_collector_1_1_map_a9380dab5eb98419dc1bb92f79a7e124c}{remove\+Jewel}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em A função remove\+Jewel retira uma joia do mapa, inserindo um espaço vazio em seu lugar e subtraindo 1 do contador de joias.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_jewel_collector_1_1_map_a05a353f519b080d5aba75fdf8390feea}\label{class_jewel_collector_1_1_map_a05a353f519b080d5aba75fdf8390feea}} 
+void {\bfseries you\+Win} ()
+\begin{DoxyCompactList}\small\item\em Esta função imprime uma mensagem de vitória para o jogador.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jewel_collector_1_1_map_a87e6b362c6c4d507572a1a6ac10988df}\label{class_jewel_collector_1_1_map_a87e6b362c6c4d507572a1a6ac10988df}} 
+\mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}}\mbox{[},\mbox{]} {\bfseries matrix} = new \mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}}\mbox{[}10, 10\mbox{]}
+\begin{DoxyCompactList}\small\item\em A matrix é um array de duas dimensões, e armazena objetos do tipo \mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}}. Desse modo, como todos os elementos do mapa herdam de \mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}}, o mapa consegue acomodar \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}, \mbox{\hyperlink{class_jewel_collector_1_1_open_space}{Open\+Space}}, \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} e \mbox{\hyperlink{class_jewel_collector_1_1_obstacle}{Obstacle}}.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_jewel_collector_1_1_map_aa8ef321ae36cd2f65bdec3d12d2f026b}{Jewels}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em O mapa mantém uma contagem de quantas joias ainda estão espalhadas. Quando Jewels = 0, o jogo acaba.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} implementa o espaço virtual através do qual o robô se locomove. Ela armazena todas as informações dos elementos do mapa.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jewel_collector_1_1_map_a49a79ae159f7070243505d0829a9561d}\label{class_jewel_collector_1_1_map_a49a79ae159f7070243505d0829a9561d}} 
+\index{JewelCollector.Map@{JewelCollector.Map}!insertEntity@{insertEntity}}
+\index{insertEntity@{insertEntity}!JewelCollector.Map@{JewelCollector.Map}}
+\doxysubsubsection{\texorpdfstring{insertEntity()}{insertEntity()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Map.\+insert\+Entity (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}}}]{e }\end{DoxyParamCaption})}
+
+
+
+A função insert\+Entity insere um elemento do jogo (obstáculo ou jóia) na coordenada especificada  
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Coordenada x\\
+\hline
+{\em j} & Coordenada y\\
+\hline
+{\em e} & Objeto do tipo \mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}} a ser inserido\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_jewel_collector_1_1_map_a9380dab5eb98419dc1bb92f79a7e124c}\label{class_jewel_collector_1_1_map_a9380dab5eb98419dc1bb92f79a7e124c}} 
+\index{JewelCollector.Map@{JewelCollector.Map}!removeJewel@{removeJewel}}
+\index{removeJewel@{removeJewel}!JewelCollector.Map@{JewelCollector.Map}}
+\doxysubsubsection{\texorpdfstring{removeJewel()}{removeJewel()}}
+{\footnotesize\ttfamily void Jewel\+Collector.\+Map.\+remove\+Jewel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+A função remove\+Jewel retira uma joia do mapa, inserindo um espaço vazio em seu lugar e subtraindo 1 do contador de joias.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordenada x\\
+\hline
+{\em y} & Coordenada y\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_jewel_collector_1_1_map_aa8ef321ae36cd2f65bdec3d12d2f026b}\label{class_jewel_collector_1_1_map_aa8ef321ae36cd2f65bdec3d12d2f026b}} 
+\index{JewelCollector.Map@{JewelCollector.Map}!Jewels@{Jewels}}
+\index{Jewels@{Jewels}!JewelCollector.Map@{JewelCollector.Map}}
+\doxysubsubsection{\texorpdfstring{Jewels}{Jewels}}
+{\footnotesize\ttfamily int Jewel\+Collector.\+Map.\+Jewels\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+O mapa mantém uma contagem de quantas joias ainda estão espalhadas. Quando Jewels = 0, o jogo acaba.  
+
+Inteiro não negativo
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/cwart/\+Downloads/projeto\+\_\+aline\+\_\+v1/Map.\+cs\end{DoxyCompactItemize}

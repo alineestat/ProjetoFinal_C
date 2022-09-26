@@ -1,0 +1,35 @@
+\hypertarget{namespace_jewel_collector}{}\doxysection{Jewel\+Collector Namespace Reference}
+\label{namespace_jewel_collector}\index{JewelCollector@{JewelCollector}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}}
+\begin{DoxyCompactList}\small\item\em A classe entidade é a superclasse de todos os elementos inseridos no mapa do jogo – \mbox{\hyperlink{class_jewel_collector_1_1_open_space}{Open\+Space}}, \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}, \mbox{\hyperlink{class_jewel_collector_1_1_obstacle}{Obstacle}}, Radioactive e \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}. Como a linguagem é fortemente tipada, para criar a matriz que compõe o mapa, é necessário que essa matriz seja de um tipo compartilhado por todos os objetos.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}
+\begin{DoxyCompactList}\small\item\em A classe abstrata \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}} especifica as propriedades que todas as joias devem ter\+: coordenadas (x, y) e um valor.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_jewel_blue}{Jewel\+Blue}}
+\begin{DoxyCompactList}\small\item\em A classe \mbox{\hyperlink{class_jewel_collector_1_1_jewel_blue}{Jewel\+Blue}} armazena informações das joias azuis do mapa, como a sua coordenada e seu valor (10 pontos). Ela herda da classe abstrata \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}, que por sua vez herda da classe \mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}}.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_jewel_collector}{Jewel\+Collector}}
+\begin{DoxyCompactList}\small\item\em A classe \mbox{\hyperlink{class_jewel_collector_1_1_jewel_collector}{Jewel\+Collector}} é responsável por implementar o método \mbox{\hyperlink{class_jewel_collector_1_1_jewel_collector_a173ee2675f4c7c51f21d08791a62b9c0}{Main()}}, criar o mapa, inserir as joias, obstáculos, instanciar o robô e ler os comandos do teclado.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_jewel_green}{Jewel\+Green}}
+\begin{DoxyCompactList}\small\item\em A classe \mbox{\hyperlink{class_jewel_collector_1_1_jewel_green}{Jewel\+Green}} armazena informações das joias verdes do mapa, como a sua coordenada e seu valor (50 pontos). Ela herda da classe abstrata \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}, que por sua vez herda da classe \mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}}.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_jewel_red}{Jewel\+Red}}
+\begin{DoxyCompactList}\small\item\em A classe \mbox{\hyperlink{class_jewel_collector_1_1_jewel_red}{Jewel\+Red}} armazena informações das joias vermelhas do mapa, como a sua coordenada e seu valor (100 pontos). Ela herda da classe abstrata \mbox{\hyperlink{class_jewel_collector_1_1_jewel}{Jewel}}, que por sua vez herda da classe \mbox{\hyperlink{class_jewel_collector_1_1_entity}{Entity}}.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}}
+\begin{DoxyCompactList}\small\item\em A classe \mbox{\hyperlink{class_jewel_collector_1_1_map}{Map}} implementa o espaço virtual através do qual o robô se locomove. Ela armazena todas as informações dos elementos do mapa.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_obstacle}{Obstacle}}
+\begin{DoxyCompactList}\small\item\em A classe abstrata \mbox{\hyperlink{class_jewel_collector_1_1_obstacle}{Obstacle}} especifica as propriedades que todos os obstáculos devem ter\+: coordenadas (x, y) e um tipo (\mbox{\hyperlink{class_jewel_collector_1_1_tree}{Tree}} ou \mbox{\hyperlink{class_jewel_collector_1_1_water}{Water}}).  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_open_space}{Open\+Space}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_jewel_collector_1_1_open_space}{Open\+Space}} são espaços vazios do mapa, pelos quais o \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} pode se locomover.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} é o agente controlado pelo usuário que navega pelo mapa do jogo. O objetivo é fazer com que \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} colete todas as joias que estão espalhadas, desviando dos obstáculos. \mbox{\hyperlink{class_jewel_collector_1_1_robot}{Robot}} possui coordenadas (x, y) e uma sacola (Bag) que contém as joias coletadas.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_tree}{Tree}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_jewel_collector_1_1_tree}{Tree}} é um tipo de obstáculo intransponível do mapa.  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_jewel_collector_1_1_water}{Water}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_jewel_collector_1_1_water}{Water}} é um tipo de obstáculo intransponível do mapa.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_jewel_collector_a3068fe2ef0a16b4d1e37270a3c98f008}\label{namespace_jewel_collector_a3068fe2ef0a16b4d1e37270a3c98f008}} 
+enum \mbox{\hyperlink{namespace_jewel_collector_a3068fe2ef0a16b4d1e37270a3c98f008}{Obstacle\+Type}} 
+\begin{DoxyCompactList}\small\item\em Obstacle\+Type enumera os tipos de obstáculos do mapa  \end{DoxyCompactList}\end{DoxyCompactItemize}
